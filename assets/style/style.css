@@ -141,6 +141,10 @@ header .bx-menu{
     background-color: var(--texts-100);
 }
 
+.about .heading span{
+   color: var(--black);
+}
+
 .about .row{
     display: flex;
     align-items: center;
@@ -228,6 +232,10 @@ header .bx-menu{
     margin-right: 2rem;
 }
 
+.products .heading{
+    background-color: var(--texts-100);
+}
+
 .products .heading span{
    color: var(--black);
    text-align: center;
@@ -238,6 +246,7 @@ header .bx-menu{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+    
 
 .products .box-container .box{
     flex: 1 1 30rem ;
@@ -265,12 +274,241 @@ header .bx-menu{
     
 }
 
-.products .box-container .box .image .img{
+.products .box-container .box .image img{
     height:20rem;
 }
 
-.products .box-container .box:hover .image .img{
+.products .box-container .box:hover .image img{
     transform: scale(1.1);
+}
+
+.products .box-container .box .image icon{
+    position: absolute;
+    bottom: .7rem;left: 0;right: 0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image icon{
+    bottom: 0;
+}
+
+.products .box-container .box:hover .image .icon a{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    width: 20%;
+    background: var(--Fondo-600);
+    color: var(--tittles-50);
+}
+
+.products .box-container .box:hover .image .icon .cart-button{
+    border-left: 1rem solid #fff7;
+    border-left: 1rem solid #fff7;
+    width: 100%;
+}
+
+.products .box-container .box:hover .image .icon a:hover{
+    background: var(--grey);
+}
+
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: var(--Fondo-600);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--grey);
+    font-weight: lighter; 
+    text-decoration: line-through;
+}
+
+.review .heading{
+    background-color: var(--texts-100);
+}
+
+.review .heading span{
+    color: var(--black);
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.review .box-container .box .bxs-quote-alt-right{
+    position: absolute;
+    bottom: 3rem; right: 3rem;
+    font-size: 6rem;
+    color: var(--thistle-200);
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .stars i{
+    color: var(--Fondo-600);
+    font-size: 2rem;
+}
+
+.review .box-container .box p{
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.review .box-container .box .user span{
+    font-size: 1.5rem;
+    color:var(--grey);
+}
+
+.contact .heading{
+    background-color: var(--texts-100);
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .2rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row form .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    pad: 1rem;
+    font-size: 1.7rem;
+    color:var(--grey);
+    text-transform: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--Fondo-600);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.footer{
+    background: var(--thistle-200);
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+   color: var(--black);
+   font-size: 2.2rem;
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: var(--grey);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--Fondo-600);
+    text-decoration: underline;
+}
+
+.footer .box-container .box ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    height: 8rem;
+    align-items: center; 
+}
+
+.footer .box-container .box  > ul > li > a > i {
+    font-size: 2.5em;
+    color: var(--Fondo-600);
+}
+
+.footer .credito{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.footer .credito span{
+    color: var(--Fondo-600);
 }
 
 
@@ -332,7 +570,10 @@ header .bx-menu{
         font-size: 1.5rem;
     }
     
+    
+
 }
+
 
 
 @media (max-width: 450px) {
